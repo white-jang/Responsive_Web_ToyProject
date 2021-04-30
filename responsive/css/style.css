@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Header Style */
+header {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+header h1 {
+  width: 180px;
+  height: 136px;
+  position: absolute;
+  background: url(../img/logo1.png) no-repeat 0 0;
+  background-size: contain;
+  top: 70px;
+  left: 50%;
+  margin-left: -90px;
+  /* Logo 라는 텍스트 없애기 */
+  text-indent: -9999px;
+}
+
+/* Global Navigation Bar Style */
+#gnb {
+  position: absolute;
+  top: 300px;
+  right: 57px;
+}
+
+#gnb a {
+  font-size: 17px;
+  font-weight: bold;
+  color: #555;
+  line-height: 1.8;
+  padding: 8px 30px;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+#gnb a i {
+  margin-right: 13px;
+}
+
+#gnb a:hover {
+  color: skyblue;
+}
+
+/* SNS Set Style */
+.sns-set {
+  position: absolute;
+  bottom: 50px;
+  width: 90px;
+  left: 50%;
+  margin-left: -45px;
+}
+
+.sns-set a {
+  float: left;
+}
+
+
+/* Nav Style */
+nav {
+  width: 85%;
+  height: 35px;
+  background: #212121;
+  margin-left: 15%;
+  position: relative;
+}
+
+nav a {
+  position: absolute;
+  top: 5px;
+}
+
+nav a:nth-child(1) {
+  left: 10px;
+}
+
+nav a:nth-child(2) {
+  left: 150px;
+}
+
+nav a:nth-child(3) {
+  right: 85px;
+}
+
+nav a:nth-child(4) {
+  right: 10px;
+}
+
+section {
+  width: 85%;
+  margin-left: 15%;
+  background: #ccc;
+}
+
+/* Articles Style */
+article {
+  width: 20%;
+  height: 260px;
+  float: left;
+  animation: scale 1s 1;
+}
+
+/* Article Common Contents Style */
+article>div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Each Background Image Load */
+article .bg1 {
+  background-image: url(../img/pic1.jpg);
+}
+
+article .bg2 {
+  background-image: url(../img/pic2.jpg);
+}
+
+article .bg3 {
+  background-image: url(../img/pic3.jpg);
+}
+
+article .bg4 {
+  background-image: url(../img/pic4.jpg);
+}
+
+article .bg5 {
+  background-image: url(../img/pic5.jpg);
+}
+
+article .bg6 {
+  background-image: url(../img/pic6.jpg);
+}
+
+article .bg7 {
+  background-image: url(../img/pic7.jpg);
+}
+
+/* Background Common Image Style */
+article .bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+article .bg span {
+  position: absolute;
+  color: #fff;
+  font-size: 60px;
+  right: 20px;
+  bottom: 0;
+  transform: scale(10);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+article .bg1 span {
+  font-size: 170px;
+  transform: scale(1);
+  opacity: 1;
+  right: -5px;
+  bottom: -70px;
+}
+
+article:hover span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+article .bg1:hover span {
+  color: #111;
+}
+
+/* Common Text Box Style */
+article .txt {
+  background: #fff;
+  padding: 40px 30px;
+}
+
+article .txt strong {
+  font-weight: normal;
+  font-size: 30px;
+  color: #444;
+  transition: all 0.6s;
+}
+
+article:nth-child(3) .txt {
+  background: #bff7fa;
+}
+
+article:nth-child(11) .txt {
+  background: #e3f1fb;
+}
+
+article .txt:hover {
+  background: #6ce2fb;
+}
+
+article .txt:hover p {
+  color: #fff;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}
+
+article:nth-child(1) {
+  background: #999;
+  width: 60%;
+  height: 520px;
+}
+
+article:nth-child(2) {
+  width: 40%;
+  background: #888;
+}
+
+article:nth-child(3) {
+  background: #777;
+}
+
+article:nth-child(4) {
+  background: #666;
+}
+
+article:nth-child(5) {
+  background: #555;
+}
+
+article:nth-child(6) {
+  width: 40%;
+  background: #444;
+}
+
+article:nth-child(7) {
+  background: #333;
+}
+
+article:nth-child(8) {
+  background: #222;
+}
+
+article:nth-child(9) {
+  width: 40%;
+  background: #111;
+}
+
+article:nth-child(10) {
+  background: #000;
+}
+
+article:nth-child(11) {
+  background: #ddd;
+}
+
+article:nth-child(12) {
+  background: #ccc;
+}
