@@ -1,13 +1,37 @@
-@media screen and (max-width: 1600px) {
+@media screen and (max-width:1600px) {
   header {
     width: 100%;
-    position: static;
+    position: relative;
     height: 80px;
+  }
+
+  header h1 {
+    width: 200px;
+    height: 40px;
+    background-image: url(../img/logo2.png);
+    top: 20px;
+    left: 20px;
+    margin-left: 0;
   }
 
   nav {
     width: 100%;
     margin-left: 0;
+  }
+
+  #gnb {
+    top: 20px;
+    right: 200px;
+  }
+
+  #gnb li {
+    float: left;
+  }
+
+  .sns-set {
+    right: 20px;
+    bottom: 20px;
+    left: auto;
   }
 
   section {
@@ -22,25 +46,18 @@
   }
 }
 
-@media screen and (min-width:1280px) and (max-width:1600px) {
-  header {
-    width: 100%;
-    position: static;
-    height: 80px;
+@media screen and (max-width:1024px) {
+  #gnb {
+    right: 20px;
   }
 
-  nav {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  section {
-    width: 100%;
-    margin-left: 0;
+  .sns-set {
+    display: none;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1279px) {
+
   article {
     width: 25%;
   }
@@ -71,6 +88,11 @@
 }
 
 @media screen and (min-width:780px) and (max-width:1023px) {
+
+  #gnb a {
+    padding: 8px 10px;
+  }
+
   article {
     width: 33.33%
   }
@@ -110,6 +132,11 @@
 }
 
 @media screen and (min-width:640px) and (max-width:779px) {
+
+  #gnb a {
+    padding: 8px 10px;
+  }
+
   article {
     width: 25%;
   }
@@ -166,15 +193,40 @@
 
 
 @media screen and (min-width:480px) and (max-width:639px) {
-  article {
-    height: 150px;
+
+  header {
+    width: 100%;
+    height: 130px;
+  }
+
+  header h1 {
+    position: relative;
+    height: 45px;
+    top: 20px;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  #gnb {
+    width: 100%;
+    top: 80px;
+    height: 80px;
+    right: 0;
+  }
+
+  #gnb li {
+    width: 25%;
+  }
+
+  #gnb a {
+    padding: 4px;
+    text-align: center;
   }
 
   article:nth-child(1) {
     width: 100%;
     height: 300px;
   }
-
 
   article:nth-child(2) {
     width: 100%;
@@ -231,6 +283,7 @@
     width: 100%;
     height: 100px;
     z-index: 99;
+    background: transparent;
   }
 
   article:nth-child(1) {
@@ -239,6 +292,35 @@
     width: 100%;
     height: 100%;
     top: 0;
+  }
+
+  header h1 {
+    top: 20px;
+    width: 171px;
+    left: 50%;
+    margin-left: -70px;
+    background-image: url(../img/logo1.png);
+    background-size: cover;
+    height: 130px;
+  }
+
+  #gnb {
+    top: 200px;
+    width: 250px;
+    right: 50%;
+    margin-right: -125px;
+  }
+
+  #gnb li {
+    float: none;
+  }
+
+  #gnb a {
+    background: #000;
+    opacity: 0.5;
+    color: #fff;
+    margin: 8px 0;
+    border-radius: 10px;
   }
 }
 
